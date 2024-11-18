@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fattoriale"/>
+        <attribute name="authors" value="acard"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-11 11:49:04 "/>
+        <attribute name="created" value="YWNhcmQ7UkFHTkFST0c7MjAyNC0xMS0xMTsiMTE6NDM6NTAgIjsyMjgx"/>
+        <attribute name="edited" value="YWNhcmQ7UkFHTkFST0c7MjAyNC0xMS0xMTsiMTE6NDk6MDQgIjsxOzIzOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, f" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <input variable="n"/>
+            <if expression="n == 0">
+                <then/>
+                <else>
+                    <declare name="i" type="Integer" array="False" size=""/>
+                    <assign variable="i" expression="1"/>
+                    <do expression="i &lt;= n">
+                        <assign variable="f" expression="f * i"/>
+                        <assign variable="i" expression="i + 1"/>
+                    </do>
+                </else>
+            </if>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
